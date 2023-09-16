@@ -1,32 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Jason Woodall, BSc Applied Computer Science</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<body>
-<div class="">
- <h1>Jason Woodall</h1>
- <h3>BSc Applied Computer Science</h3>
-</div>
-<div class="navbar">
-  <a class="button" href="mailto:jason.woodall@gmail.com">
-    <span class="button-text">Contact Me</span>
-  </a>
-</div>    
-<div class="">
- <h2>About Me</h2>
- <a class="button" href="https://www.linkedin.com/in/jason-woodall-7741b518/">
-   <span class="button-text">LinkedIn</span>
- </a>
- <p></p>
- <h2>Professional Projects</h2>
- <a class="button" href="https://paydaycrimewar.com/">
-   <span class="button-text">PayDay: Crime War</span>
- </a>
- 
- <h2>Other</h2>
- <p></p>
- <p></p>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+	<title>Jason Woodall Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-nav">
+        <div class="nav-logo">
+        </div>
+
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        ></button>
+
+        <ul id="primary-nav" class="primary-nav" data-visible="false">
+          <li>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-container">
+          <div class="hero-text-container" data-aos="fade-up">
+            <h2>Jason Woodall</h2>
+            <p>game developer.</p>
+          </div>
+          <a href="#contact" class="hero-button" data-aos="fade-up">Let's connect!</a>
+        </div>
+      </section>
+
+
+      <section id="about">
+        <div class="section-highlight" data-aos="fade-up">ABOUT</div>
+        <div class="about-container" data-aos="fade-up">
+          <div class="about-card">
+            <section class="about-content">
+              <h2>> About</h2>
+              <p>
+                Lifelong gamer, and developer of all types of games for mobile, and PC.  With over 20 years of experience in software development.  
+              </p>
+              <p></p>
+            </section>
+
+            <section class="about-content tech-stack-section">
+              <h3>Technical Skills Overview</h3>
+              <div class="tech-stack-grid">
+                <div class="tech-stack">
+                  <img src="./assets/icons/c-sharp.png" 
+				  alt="c-sharp-icon" 
+				  width="100px"
+				  />
+                </div>
+
+                <div class="tech-stack">
+                  <img src="./assets/icons/unity.png" 
+				  alt="unity-icon" 
+				  width="100px"
+				  />
+                </div>
+
+                <div class="tech-stack">
+                  <img src="./assets/icons/playfab.png"
+				  alt="playfab"
+				  width="100px"
+				  />
+                </div>
+
+                <div class="tech-stack">
+                  <img src="./assets/icons/android.png" 
+				  alt="android-icon"
+				  width="100px"
+				  />
+
+                </div>
+                <div class="tech-stack">
+                  <img src="./assets/icons/ios.jpg" 
+				  alt="ios-icon"
+				  width="100px"
+				  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="section-highlight" data-aos="fade-up">Portfolio</div>
+        <div class="portfolio-container" data-aos="fade-up">
+          <div class="portfolio-card">
+            <div class="portfolio-content">
+              <h2>> Portfolio</h2>
+              <div class="project-container">
+                <section class="project-card">
+                  <img
+                    class="project-img"
+                    src="./assets/images/Payday-300x80.png"
+                    alt="payday"
+					width="200px"
+					height="100px"
+					style="background-color: black; padding: 10px;"
+                  />
+                  <h3>PayDay: Crime War</h3>
+                  <h5>PopReach Games</h5>
+                  <p>
+                    I worked as a senior unity developer on the multiplayer PvE/PvP shooter game PayDay:Crime War.
+					My focus was on UI/UX implementation and SDK integrations.
+                  </p>
+
+                  <div class="project-card-links">
+                    <a href="https://paydaycrimewar.com/">
+                      <img
+                        class="project-icons"
+                        src="./assets/icons/payday.png"
+                        alt=""
+						width="25px"
+                      />
+                      PayDay: Crime War
+                    </a>
+                    <a href="https://popreach.com/">
+                      <img
+                        class="project-icons"
+                        src="./assets/icons/popreach.png"
+                        alt=""
+						width="25px"
+                      />
+                      PopReach
+                    </a>					
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-highlight" data-aos="fade-up">Contacts</h2>
+        <div class="contact-container" data-aos="fade-up">
+          <div class="contact-card">
+            <h2>> Contacts</h2>
+            <p>You can contact directly me through linkedin, or email me at <b>jason.woodall [at] gmail.com</b></p>
+
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/jason-woodall-7741b518/">
+                <img
+                  class="contact-icons"
+                  src="./assets/icons/linkedin-icon.svg"
+                  alt="linkedin-icon"
+                />
+                LinkedIn
+              </a>
+              <a href="./assets/docs/resume.pdf">
+                <img
+                  class="contact-icons"
+                  src="./assets/icons/pdf.png"
+                  alt="resume"
+                />
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        Template from
+        <a href="https://github.com/chaaals" target="_blank">Charles Ching</a>
+      </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+      AOS.init({
+        once: true,
+        delay: 0
+      });
+    </script>
+  </body>
 </html>
+
