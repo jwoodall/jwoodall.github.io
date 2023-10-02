@@ -322,6 +322,9 @@ section {
   width: 100%;
   aspect-ratio: 16/9;
 }
+.project-img-tall {
+  height: 25%;
+}
 
 .project-card-links {
   align-self: flex-end;
